@@ -1,0 +1,176 @@
+application: shiprit-1082
+version: 3
+runtime: php55
+api_version: 1
+
+handlers:
+
+- url: /favicon.ico
+  static_files: static/images/favicon.ico
+  upload: static/images/favicon.ico
+
+- url: /robots.txt
+  static_files: robots.txt
+  upload: robots.txt
+
+- url: /sitemap.xml
+  static_files: sitemap.xml
+  upload: sitemap.xml
+  
+- url: /includes/plugins/qz/sign-message\.php
+  script: includes/plugins/qz/sign-message.php
+
+  
+- url: / 
+  script: shipping-box-size.php
+
+- url: /cert-sign\.php 
+  script: cert-sign.php
+  
+- url: /index\.php
+  script: shipping-box-size.php
+
+- url: /blog
+  static_dir: blog
+
+- url: /static
+  static_dir: static
+  
+- url: /images
+  static_dir: images
+
+- url: /assets
+  static_dir: assets
+  
+- url: /fonts
+  static_dir: fonts
+  
+- url: /js
+  static_dir: js 
+  
+- url: /dashboard/assets
+  static_dir: dashboard/assets
+
+- url: /dashboard/index\.php
+  script: dashboard/index.php
+
+- url: /dashboard/addresses\.php
+  script: dashboard/addresses.php
+  
+- url: /dashboard/products\.php
+  script: dashboard/products.php
+  
+- url: /dashboard/boxes\.php
+  script: dashboard/boxes.php
+  
+
+  
+- url: /ship\.php
+  script: ship.php
+  
+
+- url: /awaiting_shippping\.php
+  script: awaiting_shippping.php
+  
+- url: /shipped\.php
+  script: shipped.php
+  
+- url: /returned\.php
+  script: returned.php
+  
+- url: /account\.php
+  script: account.php
+  
+- url: /login_register\.php
+  script: login_register.php
+  
+  
+- url: /address_book\.php
+  script: address_book.php
+  
+- url: /your_address\.php
+  script: your_address.php
+  
+
+
+ 
+- url: /verify-address\.php
+  script: verify-address.php
+
+- url: /verify-from-address\.php
+  script: verify-from-address.php
+  
+- url: /verify-to-address\.php
+  script: verify-to-address.php
+  
+- url: /shipping-box-size\.php
+  script: shipping-box-size.php
+  
+- url: /shipping-rates\.php
+  script: shipping-rates.php
+
+- url: /shipping-buy-postage\.php
+  script: shipping-buy-postage.php
+  
+- url: /shipping-buy-charge\.php
+  script: shipping-buy-charge.php
+  
+- url: /get-shipping-method\.php
+  script: get-shipping-method.php
+  
+- url: /freight-quote\.php
+  script: freight-quote.php
+  
+- url: /charge-card\.php
+  script: charge-card.php
+
+
+
+
+
+- url: /includes/plugins/ebay/getorders/GetOrders\.php
+  script: includes/plugins/ebay/getorders/GetOrders.php
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+- url: /buy\.php
+  script: buy.php
+
+- url: /shopping-cart\.php
+  script: shopping-cart.php
+
+- url: /shipping-address\.php
+  script: shipping-address.php
+
+- url: /shipping-print-shipping-label\.php
+  script: shipping-print-shipping-label.php   
+  
+
+- url: /GetOrders\.php
+  script: GetOrders.php   
+  
+  
+- url: /shipping-label-printer\.php
+  script: shipping-label-printer.php 
+  
+
+  
+  
+  
+
+  
